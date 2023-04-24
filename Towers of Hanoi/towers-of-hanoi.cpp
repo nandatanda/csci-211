@@ -40,7 +40,7 @@ int main()
   to = near;
 
   // Move the rings until all of the rings are on tower 2 (B).
-  while (tower[1].size() < n + 1)
+  while (tower[1].size() < n)
   {
     // Print the move that we are making.
     cout << ++moves << ":\t";
