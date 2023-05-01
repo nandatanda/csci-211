@@ -31,16 +31,18 @@ int main()
   if (n % 2 == 0)
   {
     near = 2;
+    far = 1;
   }
   else
   {
     near = 1;
+    far = 2;
   }
 
   to = near;
 
   // Move the rings until all of the rings are on tower 2 (B).
-  while (tower[1].size() < n)
+  while (tower[1].size() < n + 1)
   {
     // Print the move that we are making.
     cout << ++moves << ":\t";
